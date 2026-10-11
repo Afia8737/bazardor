@@ -1,10 +1,10 @@
-// "use client";
+"use client";
 
-// import Link from "next/link";
-// import { useRouter } from "next/navigation";
-// import { useEffect, useState } from "react";
-// import toast from "react-hot-toast";
-// import { authClient } from "@/lib/auth-client";
+import Link from "next/link";
+import { useRouter } from "next/navigation";
+import { useEffect, useState } from "react";
+import toast from "react-hot-toast";
+import { authClient } from "@/lib/auth-client";
 
 export default function UpdateProfilePage() {
   const router = useRouter();
