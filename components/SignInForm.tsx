@@ -8,12 +8,12 @@ import { authClient } from "@/lib/auth-client";
 import AuthCard from "./AuthCard";
 import SocialButtons from "./SocialButtons";
 
-// export default function SignInForm() {
-//   const router = useRouter();
-//   const params = useSearchParams();
-//   const [loading, setLoading] = useState(false);
-//   const [error, setError] = useState("");
-//   const toasted = useRef(false);
+export default function SignInForm() {
+  const router = useRouter();
+  const params = useSearchParams();
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState("");
+  const toasted = useRef(false);
 
   // Toast when a protected route sent the user here
   useEffect(() => {
