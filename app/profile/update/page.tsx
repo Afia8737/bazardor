@@ -6,11 +6,11 @@ import { useEffect, useState } from "react";
 import toast from "react-hot-toast";
 import { authClient } from "@/lib/auth-client";
 
-export default function UpdateProfilePage() {
-  const router = useRouter();
-  const { data: session, isPending } = authClient.useSession();
-  const [name, setName] = useState("");
-  const [loading, setLoading] = useState(false);
+// export default function UpdateProfilePage() {
+//   const router = useRouter();
+//   const { data: session, isPending } = authClient.useSession();
+//   const [name, setName] = useState("");
+//   const [loading, setLoading] = useState(false);
 
   useEffect(() => {
     if (session?.user?.name) setName(session.user.name);
